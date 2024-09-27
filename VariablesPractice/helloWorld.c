@@ -1,6 +1,11 @@
 #include <stdio.h>
 
 int main(void){
-    printf("hello world");
+    char name[]= "Keyla";
+    printf("%s\n", name);
+    char nombre []= "Jake";
+    printf("%s\n", nombre);
+    char namey []= "Katie"
+    ;printf("%s\n", namey);
     return 0;
 }
