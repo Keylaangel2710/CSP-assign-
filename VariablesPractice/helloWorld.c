@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 int main(void){
-    char name[]= "Keyla";
-    printf("%s\n", name);
-    char nombre []= "Jake";
-    printf("%s\n", nombre);
-    char namey []= "Katie"
-    ;printf("%s\n", namey);
+    char name[9];
+    printf("what is your name?\n");
+    scanf("%s", name);
+    printf("Hello %s\n", name);
     return 0;
 }
