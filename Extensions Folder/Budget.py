@@ -1,11 +1,11 @@
 print("Budget calculator")
-print("Hello and welcome to our budget calculator\n");
+print("Hello and welcome to our budget calculator\n"); 
 
-income = input ('what is your monthly income?');
-rent = input ('what is your monthly rent?');
-utilities = input ('what is your monthly utilities?');
-groceries = input ('what is your monthly groceries?');
-transportation = input ('what is your monthly transportation?');
+income = int(input ('what is your monthly income?'))
+rent = int(input ('what is your monthly rent?'))
+utilities = int(input ('what is your monthly utilities?'))
+groceries = int(input ('what is your monthly groceries?'))
+transportation = int(input ('what is your monthly transportation?'))
 expenses = rent + utilities + groceries + transportation;
 savings = income * .2;
 total = income - savings - expenses 
