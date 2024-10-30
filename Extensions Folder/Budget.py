@@ -1,23 +1,20 @@
 print("Budget calculator")
-print("Hello and welcome to our budget calculator\n"); 
-
-income = int(input ('what is your monthly income?'))
-rent = int(input ('what is your monthly rent?'))
-utilities = int(input ('what is your monthly utilities?'))
-groceries = int(input ('what is your monthly groceries?'))
-transportation = int(input ('what is your monthly transportation?'))
+income = float (input ('what is your monthly income?'))
+rent = float(input ('what is your monthly rent?'))
+utilities = float(input ('what is your monthly utilities?'))
+groceries = float(input ('what is your monthly groceries?'))
+transportation = float(input ('what is your monthly transportation?'))
 expenses = rent + utilities + groceries + transportation;
-savings = income * .2;
-total = income - savings - expenses 
-
-
-print ("Your monthly income is ${income:.2f}\n")
-print("Your monthly expenses are ${expenses:.2f}\n")
-print("Your monthly savings is ${savings:.2f}\n")
-print("Your monthly spending money ${spending:. 2f}\n")
-print("Your rent is {int (prent)}% of your monthly income \n")
-print("Your utilities are {int(putilities)}% of your monthly income \n")
-print("Your groceries are {int(pgroceries)}% of your monthly income \n")
-print("Your transportation is {int(ptransportation)}% of your monthly income \n")
-print("Your savings are {int(psaving)}% of your monthly income \n")
-print("Your expenses are {int(pexpenses)}% of your monthly income \n")
+savings = income * 0.2
+total = income - savings - expenses -savings
+prent = rent/income *100 
+putilities = utilities/income *100
+ptransportation = transportation/income *100
+pexpenses = expenses/income *100
+print("Your income is: %\n", income)
+print("Your expenses are: %\n", expenses)
+print("Your saving are: %\n", savings)
+print ("YOur total left to spend is: $%.2f\n", total)
+print ( "Your rent is % of your income ", prent)
+print("Your rent is % of your income", putilities)
+print("Your rent is % of your income", ptransportation)
