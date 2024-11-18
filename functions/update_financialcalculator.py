@@ -1,7 +1,11 @@
 def user inputs(type):
-return float(input(f"monthly (type)"))
+    return float(input(f"monthly {type}"))
 
-print("this is going to calculate your budget for the month.")
+def divide (type, income):
+    return type/ income *100 
+
+
+
 income=float(input("what isn your monthly income: "))
 rent= float(input("what is your monthlyrent: "))
 utilities=float(input("what is your monthly utilities: "))
