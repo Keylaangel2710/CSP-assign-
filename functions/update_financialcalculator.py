@@ -1,4 +1,4 @@
-def user inputs(type):
+def user_inputs(type):
     return float(input(f"monthly {type}"))
 
 def divide (type, income):
@@ -6,23 +6,20 @@ def divide (type, income):
 
 
 
-income=float(input("what isn your monthly income: "))
-rent= float(input("what is your monthlyrent: "))
-utilities=float(input("what is your monthly utilities: "))
-groceries= float(input("what is your monthly transportation: "))
-saving = income *.2
-expenses = rent + utilities + groceries + transporatation
-spending = income -expenses -savings 
+income= user_inputs("income:")
+rent= user_inputs("rent:")
+utilities= user_inputs("utilities:")
+groceries= user_inputs("groceries:")
+transportation = user_inputs("transportation:")
+saving = income *0.2
+expenses = rent + utilities + groceries + transportation
+spending = income-int (expenses) -saving
 
 def percent(type,amount):
     per = amount/income *100
 
     return(f"your {type} is {per}% income. ")
 
-
-print(f"Your monthly income is ${income}\n")
-print(f"Your monthly expenses are ${expenses}\n")
-print(f"Your monthly savings is ${savings}\n")
 print(percent("rent", rent))
 print(percent("utilities",utilities))
 print(percent("groceries", groceries))
