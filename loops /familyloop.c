@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-char sibl[20][100] =  ("Danny, angel, sammy, raul")
+char sibl[20][100] =  {"Danny", "angel", "sammy"};
 int i;
 int main (){
-    for (1=0;i<3;i++)
-    printf("%s hi\n", sibl[i]);
-    return 0 
+    for (i=0;i<3;i++)
+    printf("%s \n Hi", sibl[i]);
+    return 0;
 }
 
